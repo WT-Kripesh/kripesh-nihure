@@ -333,27 +333,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Tech stack */}
-      <section className="border-t border-clay/25 bg-mist py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
-            <h2 className="font-display text-3xl font-light tracking-tight md:text-4xl">
-              Tools I reach for, and why.
-            </h2>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">
-              Stack
-            </span>
-          </div>
-          <div className="grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 md:grid-cols-3">
-            {stack.map((s) => (
-              <div key={s.name}>
-                <h4 className="mb-2 font-display text-lg font-bold">{s.name}</h4>
-                <p className="text-sm leading-relaxed text-slate">{s.why}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Footer / Contact */}
       <footer className="bg-pine px-6 py-24 text-mist">
