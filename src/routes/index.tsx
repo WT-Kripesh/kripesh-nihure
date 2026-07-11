@@ -252,27 +252,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Philosophy */}
-      <section id="thinking" className="border-y border-clay/25 bg-snow py-32 md:py-40">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">
-              How I think
-            </h2>
-            <h3 className="font-display text-4xl font-light tracking-tight md:text-5xl">
-              A short field guide.
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-clay/25 md:grid-cols-3">
-            {philosophy.map((p) => (
-              <div key={p.title} className="bg-snow p-10 md:p-12">
-                <h5 className="mb-4 font-display text-lg font-bold">{p.title}</h5>
-                <p className="text-sm leading-relaxed text-slate">{p.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* World Map / Journal */}
       <section id="journal" className="mx-auto max-w-7xl px-6 py-32 md:py-40">
