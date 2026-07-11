@@ -223,34 +223,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Bridge to /work */}
-      <section className="mx-auto max-w-5xl px-6 py-24 md:py-32">
-        <div className="flex flex-col items-start justify-between gap-8 rounded-3xl border border-clay/30 bg-snow p-10 md:flex-row md:items-center md:p-14">
-          <div className="max-w-lg">
-            <span className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">
-              Work & Experience
-            </span>
-            <h3 className="font-display text-3xl font-light leading-tight tracking-tight md:text-4xl">
-              The full engineering trail — projects, roles and a downloadable CV.
-            </h3>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row md:flex-col md:items-end lg:flex-row">
-            <Link
-              to="/work"
-              className="rounded-full bg-pine px-8 py-4 text-[11px] font-medium uppercase tracking-[0.25em] text-mist transition-colors hover:bg-forest"
-            >
-              View projects →
-            </Link>
-            <a
-              href="/kripesh-nihure-cv.pdf"
-              download
-              className="rounded-full border border-pine/25 px-8 py-4 text-[11px] font-medium uppercase tracking-[0.25em] text-pine transition-colors hover:bg-clay/20"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      </section>
 
 
       {/* World Map / Journal */}
