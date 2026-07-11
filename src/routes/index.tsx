@@ -165,6 +165,24 @@ function Index() {
       {/* Story */}
       <section id="story" className="mx-auto max-w-6xl px-6 py-32 md:py-40">
         <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2 md:gap-24">
+          <figure className="relative">
+            <img
+              src={kripeshPortrait}
+              alt="Kripesh Nihure"
+              width={1000}
+              height={1250}
+              loading="lazy"
+              className="aspect-4/5 w-full rounded-2xl object-cover shadow-[0_30px_80px_-40px_oklch(0.28_0.02_160/0.4)]"
+            />
+            <div className="absolute inset-0 flex flex-col justify-end rounded-2xl bg-linear-to-t from-pine/80 via-pine/10 to-transparent p-8 md:p-10">
+              <blockquote className="font-display text-2xl font-light italic leading-snug text-mist md:text-3xl">
+                "Everything is a win when the goal is to experience."
+              </blockquote>
+            </div>
+            <figcaption className="mt-4 text-[10px] font-medium uppercase tracking-[0.25em] text-slate/70">
+              Kripesh — somewhere in the mountains
+            </figcaption>
+          </figure>
           <div>
             <h2 className="mb-6 text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">Identity</h2>
             <h3 className="mb-10 font-display text-3xl font-light leading-[1.15] tracking-tight md:text-4xl">
@@ -189,19 +207,6 @@ function Index() {
               </p>
             </div>
           </div>
-          <figure className="relative">
-            <img
-              src={cabinWorkspace}
-              alt="Wooden cabin workspace overlooking snowy peaks"
-              width={1000}
-              height={1250}
-              loading="lazy"
-              className="aspect-4/5 w-full rounded-2xl object-cover shadow-[0_30px_80px_-40px_oklch(0.28_0.02_160/0.4)]"
-            />
-            <figcaption className="mt-4 text-[10px] font-medium uppercase tracking-[0.25em] text-slate/70">
-              The workspace — wherever the ridge is
-            </figcaption>
-          </figure>
         </div>
       </section>
 
