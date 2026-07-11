@@ -10,8 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -38,7 +36,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    console.error("Unhandled error caught by root error boundary:", error);
   }, [error]);
 
   return (
@@ -94,8 +92,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Kripesh Nihure — AI Engineer, Traveler, Mountain Lover" },
       { name: "twitter:description", content: "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bd2b767b-b76f-46d1-ac68-d00a5714278f/id-preview-02eaa70d--6b0a974c-3124-44ce-a83c-c594032b82b7.lovable.app-1783799988007.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bd2b767b-b76f-46d1-ac68-d00a5714278f/id-preview-02eaa70d--6b0a974c-3124-44ce-a83c-c594032b82b7.lovable.app-1783799988007.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
