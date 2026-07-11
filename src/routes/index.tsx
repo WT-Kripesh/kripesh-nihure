@@ -51,14 +51,6 @@ const philosophy = [
   },
 ];
 
-const stack = [
-  { name: "Python", why: "The shortest distance between an ML idea and a working prototype." },
-  { name: "PyTorch", why: "Because research code and production code should look the same." },
-  { name: "Transformers", why: "Language is becoming software — this is the compiler." },
-  { name: "Docker", why: "Reproducibility is respect for your future self." },
-  { name: "Kubernetes", why: "So the infrastructure fades into the background and the work stays foregrounded." },
-  { name: "AWS", why: "Scalable infrastructure should be boring, like a well-marked trail." },
-];
 
 const journeys = [
   {
