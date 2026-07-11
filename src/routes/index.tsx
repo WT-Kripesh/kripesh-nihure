@@ -2,18 +2,17 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroMountains from "@/assets/hero-mountains.jpg";
 import kripeshPortrait from "@/assets/kripesh-portrait.jpg";
 import worldMap from "@/assets/world-map.jpg";
-import trailHiker from "@/assets/trail-hiker.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kripesh Nihure — AI Engineer, Traveler, Mountain Lover" },
+      { title: "Kripesh Nihure — AI Engineer, a Traveler]" },
       {
         name: "description",
         content:
           "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure.",
       },
-      { property: "og:title", content: "Kripesh Nihure — AI Engineer, Traveler, Mountain Lover" },
+      { property: "og:title", content: "Kripesh Nihure — AI Engineer, Traveler" },
       {
         property: "og:description",
         content:
@@ -59,10 +58,9 @@ function Index() {
           <div className="hidden gap-8 text-[11px] font-medium uppercase tracking-[0.25em] text-pine/70 md:flex">
             <a href="#story" className="hover:text-pine">Story</a>
             <Link to="/work" className="hover:text-pine">Work</Link>
-            <a href="#journal" className="hover:text-pine">Journal</a>
           </div>
           <a
-            href="mailto:nihure.kripesh@gmail.com"
+            href="#contact"
             className="hidden rounded-full border border-pine/20 bg-mist/70 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.2em] backdrop-blur-md hover:bg-mist md:inline-block"
           >
             Get in touch
@@ -86,7 +84,7 @@ function Index() {
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center animate-fade-up">
           <span className="mb-8 inline-block rounded-full border border-pine/15 bg-mist/60 px-4 py-1.5 text-[10px] font-medium uppercase tracking-[0.3em] text-pine/70 backdrop-blur-md">
-            Lalitpur, Nepal · 27.67° N
+            Kathmandu, Nepal · 27.67° N
           </span>
           <h1 className="text-balance font-display text-4xl font-light leading-[1.05] tracking-tight text-pine md:text-6xl lg:text-7xl">
             Building AI that gives people more time.
@@ -175,26 +173,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Cinematic mid-transition */}
-      <section className="relative h-[70vh] min-h-[520px] overflow-hidden">
-        <img
-          src={trailHiker}
-          alt="Hiker on a mountain ridge at sunrise"
-          width={1200}
-          height={1600}
-          loading="lazy"
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-pine/70 via-pine/20 to-transparent" />
-        <div className="absolute inset-x-0 bottom-16 mx-auto max-w-3xl px-6 text-center">
-          <p className="font-display text-2xl font-light italic leading-relaxed text-mist md:text-4xl">
-            "Every system I ship is a down payment on another hour of trail time."
-          </p>
-        </div>
-      </section>
-
-
-
       {/* World Map / Journal */}
       <section id="journal" className="mx-auto max-w-7xl px-6 py-32 md:py-40">
         <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-5">
@@ -256,7 +234,7 @@ function Index() {
 
 
       {/* Footer / Contact */}
-      <footer className="bg-pine px-6 py-24 text-mist">
+      <footer id="contact" className="bg-pine px-6 py-24 text-mist">
         <div className="mx-auto flex max-w-6xl flex-col justify-between gap-12 md:flex-row md:items-start">
           <div className="max-w-lg">
             <h2 className="mb-6 font-display text-4xl font-light leading-tight md:text-5xl">
@@ -286,14 +264,18 @@ function Index() {
               >
                 LinkedIn
               </a>
-              <a href="#" className="hover:text-clay">GitHub</a>
-              <Link to="/work" className="hover:text-clay">Work & CV</Link>
+              <a href="https://github.com/WT-Kripesh" className="hover:text-clay" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <Link to="/work" className="hover:text-clay">
+                Work & CV
+              </Link>
             </div>
             <div className="flex flex-col gap-3 text-sm">
               <span className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-mist/40">
                 Location
               </span>
-              <span>Lalitpur-10, Nepal</span>
+              <span>Kathmandu, Nepal</span>
               <span>+977 9866431550</span>
             </div>
           </div>

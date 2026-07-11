@@ -112,8 +112,7 @@ function WorkPage() {
           <div className="hidden gap-8 text-[11px] font-medium uppercase tracking-[0.25em] text-pine/70 md:flex">
             <Link to="/" hash="story" className="hover:text-pine">Story</Link>
             <Link to="/work" className="hover:text-pine">Work</Link>
-            <Link to="/" hash="thinking" className="hover:text-pine">Thinking</Link>
-            <Link to="/" hash="journal" className="hover:text-pine">Journal</Link>
+
           </div>
           <a
             href="/kripesh-nihure-cv.pdf"
@@ -301,13 +300,56 @@ function WorkPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-pine px-6 py-16 text-mist">
-        <div className="mx-auto flex max-w-6xl flex-col justify-between gap-6 text-[10px] uppercase tracking-[0.25em] text-mist/50 sm:flex-row">
+      {/* Footer / Contact */}
+      <footer className="bg-pine px-6 py-24 text-mist">
+        <div className="mx-auto flex max-w-6xl flex-col justify-between gap-12 md:flex-row md:items-start">
+          <div className="max-w-lg">
+            <h2 className="mb-6 font-display text-4xl font-light leading-tight md:text-5xl">
+              Let's build something that matters.
+            </h2>
+            <p className="mb-8 text-mist/60">
+              Based in Kathmandu, working for the world. Open to remote AI/ML engineering roles,
+              consulting on RAG and voice systems, and thoughtful collaborations.
+            </p>
+            <a
+              href="mailto:nihure.kripesh@gmail.com"
+              className="inline-block border-b border-clay/40 pb-2 font-display text-xl text-clay transition-colors hover:border-clay"
+            >
+              nihure.kripesh@gmail.com
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-x-16 gap-y-4">
+            <div className="flex flex-col gap-3 text-sm tracking-wide">
+              <span className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-mist/40">
+                Elsewhere
+              </span>
+              <a
+                href="https://www.linkedin.com/in/kripesh-nihure77"
+                className="hover:text-clay"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a href="https://github.com/WT-Kripesh" className="hover:text-clay" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <Link to="/work" className="hover:text-clay">
+                Work & CV
+              </Link>
+            </div>
+            <div className="flex flex-col gap-3 text-sm">
+              <span className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-mist/40">
+                Location
+              </span>
+              <span>Kathmandu, Nepal</span>
+              <span>+977 9866431550</span>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto mt-20 flex max-w-6xl flex-col justify-between gap-2 border-t border-mist/10 pt-8 text-[10px] uppercase tracking-[0.25em] text-mist/40 sm:flex-row">
           <span>© {new Date().getFullYear()} Kripesh Nihure</span>
-          <Link to="/" className="hover:text-clay">
-            ← Back to story
-          </Link>
+          <span>Built between hikes · 27.67° N, 85.32° E</span>
         </div>
       </footer>
     </div>
