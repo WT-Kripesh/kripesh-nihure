@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroMountains from "@/assets/hero-mountains.jpg";
-import cabinWorkspace from "@/assets/cabin-workspace.jpg";
+import kripeshPortrait from "@/assets/kripesh-portrait.jpg";
 import worldMap from "@/assets/world-map.jpg";
 import trailHiker from "@/assets/trail-hiker.jpg";
 
