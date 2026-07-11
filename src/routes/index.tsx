@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroMountains from "@/assets/hero-mountains.jpg";
-import cabinWorkspace from "@/assets/cabin-workspace.jpg";
+import kripeshPortrait from "@/assets/kripesh-portrait.jpg";
 import worldMap from "@/assets/world-map.jpg";
 import trailHiker from "@/assets/trail-hiker.jpg";
 
@@ -24,41 +24,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const philosophy = [
-  {
-    title: "Simple systems scale.",
-    body: "Complexity is a debt paid later. If a heuristic works, don't reach for a model. If a monolith ships, don't invent microservices.",
-  },
-  {
-    title: "Automation is freedom.",
-    body: "I build machines so I don't have to be one. Every manual task is a minute stolen from the trail.",
-  },
-  {
-    title: "Measure before you optimize.",
-    body: "Understand the data distribution before choosing the transformer. Benchmarks beat gut feelings.",
-  },
-  {
-    title: "Fundamentals compound.",
-    body: "Frameworks turn over every year. Linear algebra, information theory and Unix don't.",
-  },
-  {
-    title: "Ship before you polish.",
-    body: "A rough thing in production teaches more than a perfect thing in a branch.",
-  },
-  {
-    title: "Curiosity beats credentials.",
-    body: "Read the papers. Rewrite the tutorial. Break your own assumptions weekly.",
-  },
-];
 
-const stack = [
-  { name: "Python", why: "The shortest distance between an ML idea and a working prototype." },
-  { name: "PyTorch", why: "Because research code and production code should look the same." },
-  { name: "Transformers", why: "Language is becoming software — this is the compiler." },
-  { name: "Docker", why: "Reproducibility is respect for your future self." },
-  { name: "Kubernetes", why: "So the infrastructure fades into the background and the work stays foregrounded." },
-  { name: "AWS", why: "Scalable infrastructure should be boring, like a well-marked trail." },
-];
 
 const journeys = [
   {
@@ -93,7 +59,6 @@ function Index() {
           <div className="hidden gap-8 text-[11px] font-medium uppercase tracking-[0.25em] text-pine/70 md:flex">
             <a href="#story" className="hover:text-pine">Story</a>
             <Link to="/work" className="hover:text-pine">Work</Link>
-            <a href="#thinking" className="hover:text-pine">Thinking</a>
             <a href="#journal" className="hover:text-pine">Journal</a>
           </div>
           <a
@@ -165,6 +130,24 @@ function Index() {
       {/* Story */}
       <section id="story" className="mx-auto max-w-6xl px-6 py-32 md:py-40">
         <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2 md:gap-24">
+          <figure className="relative">
+            <img
+              src={kripeshPortrait}
+              alt="Kripesh Nihure"
+              width={1000}
+              height={1250}
+              loading="lazy"
+              className="aspect-4/5 w-full rounded-2xl object-cover shadow-[0_30px_80px_-40px_oklch(0.28_0.02_160/0.4)]"
+            />
+            <div className="absolute inset-0 flex flex-col justify-end rounded-2xl bg-linear-to-t from-pine/80 via-pine/10 to-transparent p-8 md:p-10">
+              <blockquote className="font-display text-2xl font-light italic leading-snug text-mist md:text-3xl">
+                "Everything is a win when the goal is to experience."
+              </blockquote>
+            </div>
+            <figcaption className="mt-4 text-[10px] font-medium uppercase tracking-[0.25em] text-slate/70">
+              Kripesh — somewhere in the mountains
+            </figcaption>
+          </figure>
           <div>
             <h2 className="mb-6 text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">Identity</h2>
             <h3 className="mb-10 font-display text-3xl font-light leading-[1.15] tracking-tight md:text-4xl">
@@ -189,19 +172,6 @@ function Index() {
               </p>
             </div>
           </div>
-          <figure className="relative">
-            <img
-              src={cabinWorkspace}
-              alt="Wooden cabin workspace overlooking snowy peaks"
-              width={1000}
-              height={1250}
-              loading="lazy"
-              className="aspect-4/5 w-full rounded-2xl object-cover shadow-[0_30px_80px_-40px_oklch(0.28_0.02_160/0.4)]"
-            />
-            <figcaption className="mt-4 text-[10px] font-medium uppercase tracking-[0.25em] text-slate/70">
-              The workspace — wherever the ridge is
-            </figcaption>
-          </figure>
         </div>
       </section>
 
@@ -223,56 +193,7 @@ function Index() {
         </div>
       </section>
 
-      {/* Bridge to /work */}
-      <section className="mx-auto max-w-5xl px-6 py-24 md:py-32">
-        <div className="flex flex-col items-start justify-between gap-8 rounded-3xl border border-clay/30 bg-snow p-10 md:flex-row md:items-center md:p-14">
-          <div className="max-w-lg">
-            <span className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">
-              Work & Experience
-            </span>
-            <h3 className="font-display text-3xl font-light leading-tight tracking-tight md:text-4xl">
-              The full engineering trail — projects, roles and a downloadable CV.
-            </h3>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row md:flex-col md:items-end lg:flex-row">
-            <Link
-              to="/work"
-              className="rounded-full bg-pine px-8 py-4 text-[11px] font-medium uppercase tracking-[0.25em] text-mist transition-colors hover:bg-forest"
-            >
-              View projects →
-            </Link>
-            <a
-              href="/kripesh-nihure-cv.pdf"
-              download
-              className="rounded-full border border-pine/25 px-8 py-4 text-[11px] font-medium uppercase tracking-[0.25em] text-pine transition-colors hover:bg-clay/20"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      </section>
 
-      {/* Philosophy */}
-      <section id="thinking" className="border-y border-clay/25 bg-snow py-32 md:py-40">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">
-              How I think
-            </h2>
-            <h3 className="font-display text-4xl font-light tracking-tight md:text-5xl">
-              A short field guide.
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-clay/25 md:grid-cols-3">
-            {philosophy.map((p) => (
-              <div key={p.title} className="bg-snow p-10 md:p-12">
-                <h5 className="mb-4 font-display text-lg font-bold">{p.title}</h5>
-                <p className="text-sm leading-relaxed text-slate">{p.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* World Map / Journal */}
       <section id="journal" className="mx-auto max-w-7xl px-6 py-32 md:py-40">
@@ -333,27 +254,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Tech stack */}
-      <section className="border-t border-clay/25 bg-mist py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
-            <h2 className="font-display text-3xl font-light tracking-tight md:text-4xl">
-              Tools I reach for, and why.
-            </h2>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.4em] text-slate">
-              Stack
-            </span>
-          </div>
-          <div className="grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 md:grid-cols-3">
-            {stack.map((s) => (
-              <div key={s.name}>
-                <h4 className="mb-2 font-display text-lg font-bold">{s.name}</h4>
-                <p className="text-sm leading-relaxed text-slate">{s.why}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Footer / Contact */}
       <footer className="bg-pine px-6 py-24 text-mist">
