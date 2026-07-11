@@ -81,17 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas.",
+          "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure.",
       },
       { name: "author", content: "Kripesh Nihure" },
-      { property: "og:title", content: "Kripesh Nihure — AI Engineer & Mountain Lover" },
+      { property: "og:title", content: "Kripesh Nihure — AI Engineer, Traveler, Mountain Lover" },
       {
         property: "og:description",
         content:
-          "Production AI systems built from mountain villages. RAG platforms, Voice-to-Voice pipelines, and a life of intentional movement.",
+          "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Kripesh Nihure — AI Engineer, Traveler, Mountain Lover" },
+      { name: "twitter:description", content: "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bd2b767b-b76f-46d1-ac68-d00a5714278f/id-preview-02eaa70d--6b0a974c-3124-44ce-a83c-c594032b82b7.lovable.app-1783799988007.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bd2b767b-b76f-46d1-ac68-d00a5714278f/id-preview-02eaa70d--6b0a974c-3124-44ce-a83c-c594032b82b7.lovable.app-1783799988007.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

@@ -13,11 +13,11 @@ export const Route = createFileRoute("/")({
         content:
           "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure.",
       },
-      { property: "og:title", content: "Kripesh Nihure — AI Engineer & Mountain Lover" },
+      { property: "og:title", content: "Kripesh Nihure — AI Engineer, Traveler, Mountain Lover" },
       {
         property: "og:description",
         content:
-          "Production AI systems built from mountain villages. RAG platforms, Voice-to-Voice pipelines, and a life of intentional movement.",
+          "AI Engineer building production LLM, RAG and Voice AI systems from the Himalayas. A portfolio and field journal by Kripesh Nihure.",
       },
     ],
   }),
