@@ -323,7 +323,7 @@ function Index() {
                   i % 2 === 0 ? "" : "md:[&>*:first-child]:order-2"
                 }`}
               >
-                <div className={`md:${i % 2 === 0 ? "text-right" : "text-left"}`}>
+                <div className={i % 2 === 0 ? "md:text-right" : "md:text-left"}>
                   <span className="mb-2 block font-mono text-[11px] uppercase tracking-widest text-clay">
                     {exp.period}
                   </span>
