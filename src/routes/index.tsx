@@ -24,32 +24,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const philosophy = [
-  {
-    title: "Simple systems scale.",
-    body: "Complexity is a debt paid later. If a heuristic works, don't reach for a model. If a monolith ships, don't invent microservices.",
-  },
-  {
-    title: "Automation is freedom.",
-    body: "I build machines so I don't have to be one. Every manual task is a minute stolen from the trail.",
-  },
-  {
-    title: "Measure before you optimize.",
-    body: "Understand the data distribution before choosing the transformer. Benchmarks beat gut feelings.",
-  },
-  {
-    title: "Fundamentals compound.",
-    body: "Frameworks turn over every year. Linear algebra, information theory and Unix don't.",
-  },
-  {
-    title: "Ship before you polish.",
-    body: "A rough thing in production teaches more than a perfect thing in a branch.",
-  },
-  {
-    title: "Curiosity beats credentials.",
-    body: "Read the papers. Rewrite the tutorial. Break your own assumptions weekly.",
-  },
-];
 
 
 const journeys = [
