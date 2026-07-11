@@ -93,7 +93,6 @@ function Index() {
           <div className="hidden gap-8 text-[11px] font-medium uppercase tracking-[0.25em] text-pine/70 md:flex">
             <a href="#story" className="hover:text-pine">Story</a>
             <Link to="/work" className="hover:text-pine">Work</Link>
-            <a href="#thinking" className="hover:text-pine">Thinking</a>
             <a href="#journal" className="hover:text-pine">Journal</a>
           </div>
           <a
